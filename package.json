@@ -1,0 +1,17 @@
+{
+  "name": "erc20-subgraph",
+  "version": "0.0.1",
+  "description": "Subgraph for indexing all ERC20 token balances",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "login": "goldsky login",
+    "deploy": "goldsky subgraph deploy all-erc20-subgraph/1.0.0 --path ."
+  },
+  "author": "Peter Robinson",
+  "license": "MIT",
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.97.1",
+    "@graphprotocol/graph-ts": "^0.38.1"
+  }
+}
