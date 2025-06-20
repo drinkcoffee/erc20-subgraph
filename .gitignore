@@ -1,0 +1,8 @@
+build
+generated
+
+# Node
+node_modules
+
+# Apple
+.DS_Store

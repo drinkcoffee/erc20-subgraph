@@ -1,4 +1,4 @@
-specVersion: 0.1.0
+specVersion: 0.0.4
 description: ERC20 Subgraph
 repository: https://github.com/drinkcoffee/erc20-subgraph
 schema:
@@ -12,7 +12,7 @@ dataSources:
       startBlock: 0
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.9
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
         - Account
@@ -20,7 +20,7 @@ dataSources:
         - TokenBalance
       abis:
         - name: ERC20
-          file: ./abis/ERC20.json
+          file: ./abis/ERC20-NoApprove.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
